@@ -1,2 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using Calculator;
+
+Presenter presenter = new Presenter(new ConsoleUI(), new MathModel());
+presenter.Run();
